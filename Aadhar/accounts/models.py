@@ -6,21 +6,7 @@ from django.dispatch import receiver
 from rest_framework.authtoken.models import Token 
 from django.conf import settings
 # Create your models here.
-# class MyUser(AbstractBaseUser,PermissionsMixin):
-#     email = models.EmailField(max_length=255, unique=True)
-#     username=models.CharField(max_length=255,default='',unique=True)
-#     password=models.CharField(max_length=15)
-#     is_staff = models.BooleanField(default=False)
-#     is_active=models.BooleanField(default=True)
-#     date_joined=models.DateTimeField(default=timezone.now)
-#     # is_admin
 
-#     USERNAME_FIELD='email'
-
-# @receiver(post_save, sender=settings.AUTH_USER_MODEL)
-# def create_auth_token(sender, instance=None,created=False,**kwargs):
-#     if created:
-#         Token.objects.create(user=instance)
 
 
 
